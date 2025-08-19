@@ -1,59 +1,59 @@
-/* 基礎背景與字體顏色 */
+/* 深色主題全域背景優化 */
 body, .content-wrap, .sidebar, .header, .navbar, .bookshelf, .book, .page, .card, .entity-list, .search-box {
-  background: #222 !important;
-  color: #e0e0e0 !important;
-}
-
-/* 卡片、主體、側邊欄圓角與陰影 */
-.card, .content-wrap, .sidebar, .header, .book, .bookshelf, .entity-list-item, .search-box, .panel, .dropdown-menu, .page-content {
-  background: #282828 !important;
-  border-radius: 14px !important;
-  border: none !important;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.20);
-}
-
-/* 導覽列深色與圓角 */
-.header, .navbar {
-  background: #232323 !important;
-  border-radius: 14px !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background: #181a20 !important;
+  color: #e3e6ed !important;
 }
 
 /* 側邊欄美化 */
 .sidebar {
-  background: #262626 !important;
-  border-radius: 14px !important;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  background: #20232b !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.17);
+}
+
+/* 導覽列與頂部 */
+.header, .navbar {
+  background: #22242a !important;
+  border-radius: 16px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* 卡片與主要內容 */
+.card, .content-wrap, .book, .bookshelf, .entity-list-item, .search-box, .panel, .dropdown-menu, .page-content {
+  background: #22242a !important;
+  border-radius: 18px !important;
+  border: none !important;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.16);
 }
 
 /* 按鈕美化 */
-.btn, button, .primary-btn, .secondary-btn {
-  background: #444 !important;
-  color: #e0e0e0 !important;
+.btn, button, .primary-btn, .secondary-btn, .entity-list-item {
+  background: #2c3240 !important;
+  color: #e3e6ed !important;
   border-radius: 10px !important;
   border: none !important;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.15s, color 0.15s;
 }
-.btn:hover, button:hover, .primary-btn:hover, .secondary-btn:hover {
+.btn:hover, button:hover, .primary-btn:hover, .secondary-btn:hover, .entity-list-item:hover {
   background: #007bfc !important;
   color: #fff !important;
 }
 
+/* 標題色彩 */
+h1, h2, h3, h4, h5, h6 {
+  color: #f4f7fa !important;
+}
+
 /* 輸入框美化 */
 input, textarea, select {
-  background: #232323 !important;
-  color: #e0e0e0 !important;
+  background: #181a20 !important;
+  color: #e3e6ed !important;
   border-radius: 8px !important;
   border: 1px solid #444 !important;
 }
 input:focus, textarea:focus, select:focus {
   border-color: #007bfc !important;
   box-shadow: 0 0 4px #007bfc55;
-}
-
-/* 標題色彩 */
-h1, h2, h3, h4, h5, h6 {
-  color: #fafafa !important;
 }
 
 /* 超連結美化 */
@@ -63,37 +63,29 @@ a {
   transition: background 0.2s, color 0.2s;
 }
 a:hover, a:focus {
-  background: #333 !important;
+  background: #0e1726 !important;
   color: #ffffff !important;
 }
 
 /* 表格美化 */
 table {
-  background: #242424 !important;
-  color: #e0e0e0 !important;
-  border-radius: 10px !important;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  background: #1d1f26 !important;
+  color: #e3e6ed !important;
+  border-radius: 12px !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.10);
 }
 th, td {
-  border-color: #444 !important;
+  border-color: #3a3e48 !important;
   padding: 8px 16px !important;
-}
-
-/* 頁面區塊圓角 */
-.panel, .dropdown-menu, .entity-list, .search-box, .page-content, .alert, .notification {
-  border-radius: 12px !important;
-  background: #242424 !important;
-  color: #e0e0e0 !important;
-  border: none !important;
 }
 
 /* 通知/警示美化 */
 .alert, .notification {
-  background: #333 !important;
-  color: #fdd835 !important;
-  border-radius: 10px !important;
+  background: #292c37 !important;
+  color: #ffd853 !important;
+  border-radius: 12px !important;
   border: none !important;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.14);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.17);
 }
 
 /* 下拉選單圓角 */
@@ -103,29 +95,29 @@ select {
 
 /* 滾動條美化 */
 ::-webkit-scrollbar {
-  background: #232323;
+  background: #1a1b22;
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #444;
+  background: #31354a;
   border-radius: 8px;
 }
 
 /* 分隔線美化 */
 hr {
-  border-color: #444 !important;
+  border-color: #343a49 !important;
 }
 
 /* 列表美化 */
 ul, ol {
-  background: #232323 !important;
+  background: #20232b !important;
   border-radius: 8px;
 }
 
 /* 搜尋框特效 */
 .search-box input {
-  background: #222 !important;
-  color: #e0e0e0 !important;
+  background: #181a20 !important;
+  color: #e3e6ed !important;
   border-radius: 8px !important;
   border: 1px solid #444 !important;
 }
@@ -144,32 +136,62 @@ img {
 
 /* 小提示/浮動窗美化 */
 .tooltip, .popover {
-  background: #232323 !important;
-  color: #e0e0e0 !important;
+  background: #23253a !important;
+  color: #e3e6ed !important;
   border-radius: 8px !important;
   border: none !important;
 }
 
 /* 禁用狀態美化 */
 :disabled, .disabled {
-  background: #333 !important;
+  background: #292c37 !important;
   color: #888 !important;
-}
-
-/* 隱藏原有亮色分隔線或背景 */
-hr, .divider {
-  border-top: 1px solid #444 !important;
 }
 
 /* 小區塊圓角補強 */
 .entity-list-item, .book, .bookshelf, .page, .card {
-  border-radius: 14px !important;
+  border-radius: 16px !important;
 }
 
 /* 章節/頁面選單美化 */
 .book-tree, .entity-list, .entity-list-item {
-  background: #232323 !important;
-  border-radius: 10px !important;
+  background: #20232b !important;
+  border-radius: 12px !important;
+}
+
+/* Discord 按鈕強化 */
+a[href*="discord"] {
+  background: #5865f2 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  padding: 2px 10px !important;
+  font-weight: bold;
+  box-shadow: 0 1px 6px rgba(88,101,242,0.13);
+}
+
+/* 右側浮動按鈕美化 */
+[class*="fab"], [class*="float-btn"], [class*="sidebar-btn"] {
+  background: #23253a !important;
+  color: #e3e6ed !important;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border: none !important;
+}
+
+/* 右側設定區塊美化 */
+[class*="settings-panel"], [class*="sidebar-settings"], .settings-panel {
+  background: #23253a !important;
+  border-radius: 14px !important;
+  color: #e3e6ed !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+/* 修正底部連結區 */
+footer, .footer {
+  background: #181a20 !important;
+  color: #8ecaff !important;
+  border-radius: 14px !important;
+  padding: 12px 0 !important;
 }
 
 /* 其他細節美化可依需求補充 */
