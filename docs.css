@@ -1,80 +1,99 @@
-/* 深色背景與文字 */
-body, .content-wrap, .sidebar, .header {
+/* 基礎背景與字體顏色 */
+body, .content-wrap, .sidebar, .header, .navbar, .bookshelf, .book, .page, .card, .entity-list, .search-box {
   background: #222 !important;
   color: #e0e0e0 !important;
 }
 
-/* 卡片、區塊圓角 */
-.card, .entity-list-item, .content-wrap, .sidebar, .header, .book, .bookshelf {
+/* 卡片、主體、側邊欄圓角與陰影 */
+.card, .content-wrap, .sidebar, .header, .book, .bookshelf, .entity-list-item, .search-box, .panel, .dropdown-menu, .page-content {
   background: #282828 !important;
-  border-radius: 12px !important;
+  border-radius: 14px !important;
   border: none !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.20);
 }
 
-/* 按鈕圓角與深色樣式 */
+/* 導覽列深色與圓角 */
+.header, .navbar {
+  background: #232323 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* 側邊欄美化 */
+.sidebar {
+  background: #262626 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+
+/* 按鈕美化 */
 .btn, button, .primary-btn, .secondary-btn {
   background: #444 !important;
   color: #e0e0e0 !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   border: none !important;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 .btn:hover, button:hover, .primary-btn:hover, .secondary-btn:hover {
-  background: #555 !important;
+  background: #007bfc !important;
   color: #fff !important;
 }
 
-/* 輸入框圓角與深色 */
+/* 輸入框美化 */
 input, textarea, select {
-  background: #222 !important;
+  background: #232323 !important;
   color: #e0e0e0 !important;
-  border-radius: 6px !important;
+  border-radius: 8px !important;
   border: 1px solid #444 !important;
 }
 input:focus, textarea:focus, select:focus {
   border-color: #007bfc !important;
+  box-shadow: 0 0 4px #007bfc55;
 }
 
-/* 標題顏色 */
+/* 標題色彩 */
 h1, h2, h3, h4, h5, h6 {
   color: #fafafa !important;
 }
 
-/* 超連結顏色 */
+/* 超連結美化 */
 a {
   color: #8ecaff !important;
   border-radius: 4px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
-a:hover {
+a:hover, a:focus {
   background: #333 !important;
   color: #ffffff !important;
 }
 
-/* 表格圓角與深色 */
+/* 表格美化 */
 table {
-  background: #232323 !important;
+  background: #242424 !important;
   color: #e0e0e0 !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
 }
 th, td {
   border-color: #444 !important;
+  padding: 8px 16px !important;
 }
 
-/* 導覽列圓角 */
-.header, .sidebar {
+/* 頁面區塊圓角 */
+.panel, .dropdown-menu, .entity-list, .search-box, .page-content, .alert, .notification {
   border-radius: 12px !important;
+  background: #242424 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
 }
 
-/* Scrollbar 美化 */
-::-webkit-scrollbar {
-  background: #222;
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: #444;
-  border-radius: 8px;
+/* 通知/警示美化 */
+.alert, .notification {
+  background: #333 !important;
+  color: #fdd835 !important;
+  border-radius: 10px !important;
+  border: none !important;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.14);
 }
 
 /* 下拉選單圓角 */
@@ -82,18 +101,75 @@ select {
   border-radius: 8px !important;
 }
 
-/* 通知/alert圓角 */
-.alert, .notification {
-  border-radius: 10px !important;
-  background: #333 !important;
-  color: #fdd835 !important;
+/* 滾動條美化 */
+::-webkit-scrollbar {
+  background: #232323;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 8px;
+}
+
+/* 分隔線美化 */
+hr {
+  border-color: #444 !important;
+}
+
+/* 列表美化 */
+ul, ol {
+  background: #232323 !important;
+  border-radius: 8px;
+}
+
+/* 搜尋框特效 */
+.search-box input {
+  background: #222 !important;
+  color: #e0e0e0 !important;
+  border-radius: 8px !important;
+  border: 1px solid #444 !important;
+}
+
+/* 反白選取美化 */
+::selection {
+  background: #007bfc;
+  color: #fff;
+}
+
+/* 圖片邊框圓角 */
+img {
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.10);
+}
+
+/* 小提示/浮動窗美化 */
+.tooltip, .popover {
+  background: #232323 !important;
+  color: #e0e0e0 !important;
+  border-radius: 8px !important;
   border: none !important;
 }
 
-/* 其他小區塊圓角 */
-.panel, .dropdown-menu, .entity-list, .search-box, .page-content {
-  border-radius: 10px !important;
-  background: #242424 !important;
-  color: #e0e0e0 !important;
-  border: none !important;
+/* 禁用狀態美化 */
+:disabled, .disabled {
+  background: #333 !important;
+  color: #888 !important;
 }
+
+/* 隱藏原有亮色分隔線或背景 */
+hr, .divider {
+  border-top: 1px solid #444 !important;
+}
+
+/* 小區塊圓角補強 */
+.entity-list-item, .book, .bookshelf, .page, .card {
+  border-radius: 14px !important;
+}
+
+/* 章節/頁面選單美化 */
+.book-tree, .entity-list, .entity-list-item {
+  background: #232323 !important;
+  border-radius: 10px !important;
+}
+
+/* 其他細節美化可依需求補充 */
